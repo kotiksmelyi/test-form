@@ -43,7 +43,7 @@ const LoanWizardFormLayout = ({ children }: Props) => {
   return (
     <FormProvider {...methods}>
       <form
-        className="w-100"
+        className="w-full max-w-3xl"
         onSubmit={methods.handleSubmit(submit, () =>
           setError("Пропущены поля в предыдущих шагах")
         )}

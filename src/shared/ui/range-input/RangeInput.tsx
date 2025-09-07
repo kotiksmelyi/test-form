@@ -5,7 +5,7 @@ interface RangeInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   value: number;
   error?: string;
-  suffix?: string; 
+  suffix?: string;
   prefix?: string;
 }
 
@@ -23,7 +23,11 @@ export const RangeInput = forwardRef<HTMLInputElement, RangeInputProps>(
           ref={ref}
           value={value}
           {...props}
-          className="w-full"
+          className={classNames(
+            "w-full h-2 bg-gray-200 rounded-full accent-blue-500 appearance-none cursor-pointer",
+            "focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50",
+            "hover:bg-gray-300",
+          )}
         />
         {error && <span className="text-red-500 text-sm mt-1">{error}</span>}
       </div>
