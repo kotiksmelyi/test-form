@@ -1,5 +1,5 @@
 import type { WorkPlace } from "@/entities/workPlace/api/types";
-import useFetch from "@/shared/lib/hooks/use-fetch";
+import useFetch from "@/shared/lib/hooks/useFetch";
 import { useCallback, useEffect } from "react";
 
 export const useWorkPlaces = () => {

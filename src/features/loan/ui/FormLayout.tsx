@@ -3,9 +3,9 @@ import { useState, type ReactNode } from "react";
 import {
   useLoanWizardForm,
   type LoanWizardFormValues,
-} from "@/shared/lib/hooks/use-loan-form";
+} from "@/shared/lib/hooks/useLoanForm";
 import { Modal } from "@/shared/ui/modal";
-import useFetch from "@/shared/lib/hooks/use-fetch";
+import useFetch from "@/shared/lib/hooks/useFetch";
 
 type Props = {
   children: ReactNode;

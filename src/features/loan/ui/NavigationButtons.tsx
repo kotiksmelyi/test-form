@@ -1,4 +1,4 @@
-import { stepFields } from "@/shared/lib/hooks/use-loan-form";
+import { stepFields } from "@/shared/lib/hooks/useLoanForm";
 import { Button } from "@/shared/ui/button";
 import type { FC } from "react";
 import { useFormContext } from "react-hook-form";
